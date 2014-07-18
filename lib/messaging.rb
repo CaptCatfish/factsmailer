@@ -25,7 +25,7 @@ class Email
    parameters = {
     :to => @to,
     :subject => @subject,
-    :text => @fact.facts_text,
+    :text => "http://pure-brushlands-1883.herokuapp.com/",
     :from => "postmaster@sandbox7eeb083c72bd46d6aaef35f5a8ee27f6.mailgun.org"
    }
    @mailgun.messages.send_email(parameters)
