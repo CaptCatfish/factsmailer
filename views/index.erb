@@ -1,0 +1,14 @@
+<!doctype = html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>today in history for your health</title>
+</head>
+<body>
+  <h1>Todays facts in history</h1>
+  <h1>
+    <% @fact_text.each do |news_item| %>
+      <h1><%= news_item.first.text %></h1>
+      <p><%= news_item.last.text %></p>
+    <% end %>
+  </h1>
+</body>
